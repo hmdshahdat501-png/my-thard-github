@@ -13,7 +13,7 @@ h1{
     margin-top: 5px;
     font-size: 100px;
 }
-button{
+.li{
     width: 250px;
     height: 50px;
     background-color: #D01D00;
@@ -113,7 +113,57 @@ h2{
     margin: 10px;
     
 }
-.coustom li::before
-    background-image:url(./images/3.jpeg);
+.coustom li::before{
+    list-style-image: url(images/asterisk.png);
     
+    
+}
+.sli{
+    width: 600px;
+    height: 350px;
+    overflow: hidden;
+    margin: 20px auto;
+    position: absolute;
+}
+.slider{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+.slider img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    box-shadow: 0 0 0 0.1;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.slider img:hover{
+    width: 500px;
+    height: 500px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@keyframes slider {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(0%); }
+    36% { transform: translateX(-100%); }
+    66% { transform: translateX(-100%); }
+    69% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+.prouct-box img{
+    width: 80px;
+    height: 80px;
+}
+.prouct-box{
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    
+
 }
